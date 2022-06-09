@@ -1,5 +1,6 @@
 package com.renarosantos.ecommerceapp
 
+import com.renarosantos.ecommerceapp.interfaces.ProductService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

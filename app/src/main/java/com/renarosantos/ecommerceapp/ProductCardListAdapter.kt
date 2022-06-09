@@ -8,6 +8,11 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.BitmapImageViewTarget
 import com.renarosantos.ecommerceapp.databinding.ProductCardBinding
 
+
+/*
+* Adapter is a bridge between AdapterView and underlying data for that view.
+* Provides access to data items
+* */
 class ProductCardListAdapter(val onItemClicked: (ProductCardViewState) -> Unit) : RecyclerView.Adapter<ProductCardListAdapter.ViewHolder>() {
 
 

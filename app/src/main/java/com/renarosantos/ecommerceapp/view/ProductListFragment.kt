@@ -51,12 +51,12 @@ class ProductListFragment : Fragment() {
                 binding.loadingView.isVisible = false
                 adapter.setData(viewState.productList)
             }
-            ProductListViewState.Error -> {
+            is ProductListViewState.Error -> {
                 binding.viewProductList.isVisible = false
                 binding.errorView.isVisible = true
                 binding.loadingView.isVisible = false
             }
-            ProductListViewState.Loading -> {
+            is ProductListViewState.Loading -> {
                 binding.viewProductList.isVisible = false
                 binding.errorView.isVisible = false
                 binding.loadingView.isVisible = true

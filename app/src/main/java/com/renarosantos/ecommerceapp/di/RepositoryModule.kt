@@ -1,9 +1,9 @@
 package com.renarosantos.ecommerceapp.di
 
 import com.renarosantos.ecommerceapp.ApiClient
-import com.renarosantos.ecommerceapp.ProductRepository
+import com.renarosantos.ecommerceapp.interfaces.ProductRepository
 import com.renarosantos.ecommerceapp.ProductRepositoryAPI
-import com.renarosantos.ecommerceapp.ProductService
+import com.renarosantos.ecommerceapp.interfaces.ProductService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
