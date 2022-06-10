@@ -1,11 +1,10 @@
-package com.renarosantos.ecommerceapp.view
+package com.renarosantos.ecommerceapp.presentation.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.transition.TransitionInflater
 import com.bumptech.glide.Glide
 import com.renarosantos.ecommerceapp.databinding.ProductDetailsFragmentBinding
 

@@ -7,16 +7,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.BitmapImageViewTarget
 import com.renarosantos.ecommerceapp.databinding.ProductCardBinding
+import com.renarosantos.ecommerceapp.domain.Product
 
 
 /*
 * Adapter is a bridge between AdapterView and underlying data for that view.
 * Provides access to data items
 * */
-class ProductCardListAdapter(val onItemClicked: (ProductCardViewState) -> Unit) : RecyclerView.Adapter<ProductCardListAdapter.ViewHolder>() {
+class ProductCardListAdapter(val onItemClicked: (Product) -> Unit) : RecyclerView.Adapter<ProductCardListAdapter.ViewHolder>() {
 
 
-    private var data: List<ProductCardViewState> = emptyList()
+    private var data: List<Product> = emptyList()
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -35,23 +36,23 @@ class ProductCardListAdapter(val onItemClicked: (ProductCardViewState) -> Unit) 
         return data.size
     }
 
-    fun setData(productList: List<ProductCardViewState>) {
+    fun setData(productList: List<Product>) {
         this.data = productList
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(productCardViewState: ProductCardViewState) {
+        fun bind(product: Product) {
             val bind = ProductCardBinding.bind(itemView)
             itemView.setOnClickListener {
-                onItemClicked(productCardViewState)
+                onItemClicked(product)
             }
             bind.apply {
-                viewProductName.text = productCardViewState.title
-                viewProductDescription.text = productCardViewState.description
-                productPrice.text = productCardViewState.price
+                viewProductName.text = product.title
+                viewProductDescription.text = product.description
+                productPrice.text = product.price
                 Glide.with(productImage)
                     .asBitmap()
-                    .load(productCardViewState.imageUrl)
+                    .load(product.imageUrl)
                     .into(BitmapImageViewTarget(productImage))
             }
         }

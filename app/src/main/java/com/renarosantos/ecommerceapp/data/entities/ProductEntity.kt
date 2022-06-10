@@ -1,4 +1,4 @@
-package com.renarosantos.ecommerceapp
+package com.renarosantos.ecommerceapp.data.entities
 
 data class ProductEntity(
     val title: String,

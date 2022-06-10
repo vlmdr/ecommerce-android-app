@@ -1,4 +1,4 @@
-package com.renarosantos.ecommerceapp.view
+package com.renarosantos.ecommerceapp.presentation.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,10 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.renarosantos.ecommerceapp.ProductCardListAdapter
-import com.renarosantos.ecommerceapp.ProductCardViewState
+import com.renarosantos.ecommerceapp.domain.Product
 import com.renarosantos.ecommerceapp.ProductListViewModel
 import com.renarosantos.ecommerceapp.ProductListViewState
 import com.renarosantos.ecommerceapp.databinding.ProductListFragmentBinding
@@ -65,7 +64,7 @@ class ProductListFragment : Fragment() {
     }
 
     // parameter just to show how to retrieve data from Adapter to the fragment
-    private fun onItemClicked(viewState: ProductCardViewState) {
+    private fun onItemClicked(viewState: Product) {
         findNavController().navigate(ProductListFragmentDirections.actionProductListFragmentToProductDetailsFragment())
     }
 }

@@ -1,6 +1,6 @@
-package com.renarosantos.ecommerceapp
+package com.renarosantos.ecommerceapp.domain
 
-data class ProductCardViewState(
+data class Product(
     val title: String,
     val description: String,
     val price: String,
