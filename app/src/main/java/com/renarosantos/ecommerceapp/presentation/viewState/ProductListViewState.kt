@@ -1,4 +1,4 @@
-package com.renarosantos.ecommerceapp
+package com.renarosantos.ecommerceapp.presentation.viewState
 
 import com.renarosantos.ecommerceapp.domain.Product
 
