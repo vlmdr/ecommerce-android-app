@@ -15,6 +15,7 @@ class ProductRepositoryAPI @Inject constructor(private val service: ProductServi
         return withContext(Dispatchers.IO) {
             service.getProductList().map {
                 Product(
+                    it.id,
                     it.title,
                     it.description,
                     it.price,

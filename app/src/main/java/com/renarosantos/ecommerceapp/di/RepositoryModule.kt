@@ -1,7 +1,9 @@
 package com.renarosantos.ecommerceapp.di
 
+import com.renarosantos.ecommerceapp.data.database.WishlistDatabaseRepository
 import com.renarosantos.ecommerceapp.data.repository.api.ApiClient
 import com.renarosantos.ecommerceapp.data.repository.ProductRepository
+import com.renarosantos.ecommerceapp.data.repository.WishlistRepository
 import com.renarosantos.ecommerceapp.data.repository.api.ProductRepositoryAPI
 import com.renarosantos.ecommerceapp.data.repository.api.ProductService
 import dagger.Module
@@ -25,6 +27,11 @@ class RepositoryModule {
     fun providesProductRepository(
         productRepositoryAPI: ProductRepositoryAPI
     ): ProductRepository = productRepositoryAPI
+
+    @Provides
+    fun providesWishlistRepository(
+        databaseRepository: WishlistDatabaseRepository
+    ) : WishlistRepository = databaseRepository
 
 
 }

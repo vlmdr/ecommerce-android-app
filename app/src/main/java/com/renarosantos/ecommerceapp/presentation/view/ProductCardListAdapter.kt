@@ -3,6 +3,7 @@ package com.renarosantos.ecommerceapp.presentation.view
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.BitmapImageViewTarget
@@ -46,6 +47,22 @@ class ProductCardListAdapter(val onItemClicked: (ProductCardViewState) -> Unit) 
                 viewProductName.text = productCardViewState.title
                 viewProductDescription.text = productCardViewState.description
                 productPrice.text = productCardViewState.price
+                viewWishListIcon.setImageDrawable(
+                    if (productCardViewState.isFavorite) {
+                        ResourcesCompat.getDrawable(
+                            viewWishListIcon.resources,
+                            R.drawable.ic_baseline_favorite,
+                            null
+                        )
+                    } else {
+                        ResourcesCompat.getDrawable(
+                            viewWishListIcon.resources,
+                            R.drawable.ic_baseline_favorite_disabled,
+                            null
+                        )
+
+                    }
+                )
                 Glide.with(productImage)
                     .asBitmap()
                     .load(productCardViewState.imageUrl)
