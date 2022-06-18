@@ -1,7 +1,7 @@
 package com.renarosantos.ecommerceapp.data.repository
 
 interface WishlistRepository {
-    fun addToWishList(productId: String) : Boolean
-    fun removeFromWishList(productId: String) : Boolean
-    fun isFavorite(productId: String) : Boolean
+    suspend fun addToWishList(productId: String)
+    suspend fun removeFromWishList(productId: String)
+    suspend fun isFavorite(productId: String) : Boolean
 }
