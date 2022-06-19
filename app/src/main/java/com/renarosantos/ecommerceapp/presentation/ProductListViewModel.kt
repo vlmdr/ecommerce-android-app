@@ -26,7 +26,7 @@ class ProductListViewModel @Inject constructor(
 
     fun loadProductList() {
         viewModelScope.launch {
-            wishlistRepository.addToWishList("3")
+            wishlistRepository.addToWishList("4")
             _viewState.postValue(ProductListViewState.Loading)
             // Data call to fetch products
             val productList = repository.getProductList()

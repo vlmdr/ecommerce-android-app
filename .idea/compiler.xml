@@ -5,9 +5,9 @@
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/compiler/4.12.0/75cf5e43fd6e6c6e769e060014feb985284cfae7/compiler-4.12.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/compiler/4.13.2/1679c738797dd19ebee10bfb3faf21198da21a3c/compiler-4.13.2.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.room/room-compiler/2.4.2/de03a66ae88c970beeb78ae0e7c48af6419d3250/room-compiler-2.4.2.jar" />
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/annotations/4.12.0/298d793db124809d74ad9a90de5eddc408898c84/annotations-4.12.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/annotations/4.13.2/41c0ddef7eb508bb6de9a93a85c8d4be82f65047/annotations-4.13.2.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.room/room-migration/2.4.2/3f681427593343d0b296b8fccc117569184f96f7/room-migration-2.4.2.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.room/room-common/2.4.2/63d9f9cb245ee9b4c8ebb8aca201661f99583ffa/room-common-2.4.2.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.room/room-compiler-processing/2.4.2/7d69eb38c3377910327c57e1e49367e8f5bad833/room-compiler-processing-2.4.2.jar" />
